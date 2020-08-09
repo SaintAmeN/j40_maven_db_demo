@@ -1,6 +1,14 @@
 # Maven DB Demo
 This application is just a demonstration of a proper project creation. This paragraph should contain description of Your project with it's main goals.
 
+## Prerequisites
+This project uses following technologies:
+- JDK 11,
+- Hibernate
+- MySQL Connector 
+
+You should have access to a mysql database. Access to the database is controlled via configuration file in resources.
+
 ## What does it do?
 <!-- Funkcjonalności jakie planujemy zrobić -->
 This application has following functionalities:
