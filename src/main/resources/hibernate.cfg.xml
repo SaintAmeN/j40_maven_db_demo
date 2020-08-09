@@ -26,5 +26,9 @@
 
         <!--TODO: na potem - dopisanie klas obsługiwanych przez hibernate -->
         <mapping class="com.sda.javagda40.mavendbdemo.model.AppUser"/>
+        <mapping class="com.sda.javagda40.mavendbdemo.model.Address"/>
+        <mapping class="com.sda.javagda40.mavendbdemo.model.ExtraService"/>
+        <mapping class="com.sda.javagda40.mavendbdemo.model.Service"/>
+        <mapping class="com.sda.javagda40.mavendbdemo.model.ServiceOrder"/>
     </session-factory>
 </hibernate-configuration>

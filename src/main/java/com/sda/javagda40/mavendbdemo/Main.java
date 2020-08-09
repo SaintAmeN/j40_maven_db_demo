@@ -2,6 +2,7 @@ package com.sda.javagda40.mavendbdemo;
 
 import com.sda.javagda40.mavendbdemo.database.EntityDao;
 import com.sda.javagda40.mavendbdemo.database.HibernateUtil;
+import com.sda.javagda40.mavendbdemo.model.Address;
 import com.sda.javagda40.mavendbdemo.model.AppUser;
 
 public class Main {
