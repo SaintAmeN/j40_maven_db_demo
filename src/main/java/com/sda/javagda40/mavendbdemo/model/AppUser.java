@@ -26,7 +26,7 @@ public class AppUser { // POJO
     private String phoneNumber;
     private String email;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     @EqualsAndHashCode.Exclude
     private Set<Address> addresses;
 
