@@ -28,6 +28,8 @@ public class AppUser { // POJO
     @EqualsAndHashCode.Exclude
     private Set<Address> addresses;
 
+    @OneToMany(fetch = FetchType.EAGER)
+    private Set<ServiceOrder> serviceOrders;
 
     public AppUser(String firstName, String lastName) {
         this.firstName = firstName;

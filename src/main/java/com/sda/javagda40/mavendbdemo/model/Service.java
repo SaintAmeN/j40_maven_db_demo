@@ -8,6 +8,7 @@ import java.util.Set;
 
 @Data
 @Entity
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Service {
@@ -20,6 +21,7 @@ public class Service {
 
     private Integer duration; // w ilościach godzin (ile czasu zajmuje usługa)
 
+    @Enumerated(value = EnumType.STRING)
     private ServiceType type;
 
     public Service(String name, Double price, Integer duration, ServiceType type) {
@@ -29,7 +31,7 @@ public class Service {
         this.type = type;
     }
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private Set<ExtraService> availableExtraServices;

@@ -21,4 +21,9 @@ public class ExtraService {
 
     private String name;
     private Double additionalCost;
+
+    public ExtraService(String name, Double additionalCost) {
+        this.name = name;
+        this.additionalCost = additionalCost;
+    }
 }

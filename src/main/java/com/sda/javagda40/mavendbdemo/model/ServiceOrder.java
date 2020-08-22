@@ -31,4 +31,7 @@ public class ServiceOrder {
 
     @ManyToMany
     private Set<ExtraService> extraServices;
+
+//    @ManyToOne()
+//    private AppUser appUser;
 }
