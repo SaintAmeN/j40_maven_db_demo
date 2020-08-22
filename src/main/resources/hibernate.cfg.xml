@@ -22,7 +22,7 @@
         <!--validate - weryfikuje poprawnoĹ›Ä‡ bazy -->
         <!--ustawienie definiuje czy hibernate ma sam stworzyć TABELE! -->
         <property name="hbm2ddl.auto">update</property> <!--czy zbudować tabele samemu?-->
-        <property name="show_sql">true</property>
+        <property name="show_sql">false</property>
 
         <!--TODO: na potem - dopisanie klas obsługiwanych przez hibernate -->
         <mapping class="com.sda.javagda40.mavendbdemo.model.AppUser"/>

@@ -1,15 +1,13 @@
 package com.sda.javagda40.mavendbdemo.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Data // Getter, Setter, ToString, EqualsAndHashCode, RequiredArgsConstructor
 @Entity
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class AppUser { // POJO
